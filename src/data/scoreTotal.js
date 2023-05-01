@@ -7,6 +7,7 @@ let scoreHouse = {
 };
 
 export let house= "";
+export let index = 0;
 
 //récupérer l'information
 export function getScore() {
@@ -15,7 +16,7 @@ export function getScore() {
 
 //mettre à jour
 export function setScore(maison, valeur) {
-    scoreHouse[maison] += valeur
+    scoreHouse[maison] += valeur;
 }
 
 export function getHouse() {
@@ -26,3 +27,10 @@ export function setHouse(newHouse) {
    house = newHouse;
 }
 
+export function getIndex() {
+    return index;
+}
+
+export function setIndex(newIndex) {
+    index = newIndex;
+ }

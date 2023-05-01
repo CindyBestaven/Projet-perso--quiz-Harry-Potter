@@ -146,26 +146,26 @@
     },
     {
       id:6,  
-      question:"Comment préférez-vous vous impliquer dans un projet d'équipe ?",
+      question:"Si vous pouviez visiter un lieu magique de l'univers Harry Potter, lequel choisiriez-vous ?",
       answer1: {
-        response1:"En prenant la tête et en dirigeant l'équipe",
+        response1:"Gringotts",
         answerScore: 10,
         answerHouse: 'Gryffondor'
       },
       answer2: {
-        response2:"En contribuant avec mes idées et mes compétences spécifiques",
+        response2:"La forêt interdite",
         answerScore: 10,
         answerHouse: 'Serdaigle'
       },
       answer3: {
-        response3:"En soutenant les membres de l'équipe et en favorisant l'harmonie",
-        answerScore: 10,
-        answerHouse: 'Poufsouffle'
-      },
-      answer4: {
-        response4:"En cherchant à atteindre les objectifs du projet de manière efficace et stratégique",
+        response3:"Le ministère de la magie",
         answerScore: 10,
         answerHouse: 'Serpentard'
+      },
+      answer4: {
+        response4:"Pré-au-Lard",
+        answerScore: 10,
+        answerHouse: 'Poufsouffle'
       }
     },
     {

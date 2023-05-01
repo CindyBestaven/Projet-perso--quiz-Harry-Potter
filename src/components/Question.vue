@@ -85,32 +85,35 @@ export default {
         gap: 20px;
         width: 90%;
         height: 90%;
+        text-align: center;
     }
 
     button {
-        background-color:blueviolet;
+        background-color: blueviolet;
         color: white;
         border-radius: 10px;
-        padding: 10px 10px 10px 10px;
-        font-size: 1.5em;
+        padding: 15px 10px;
+        font-size: 1.2em;
         font-weight: bold;
-        width: 80%;
-        height: 80%;
+        width: 500px;
+      }
+
+    button:hover {
+      box-shadow: 0px 0px 13px white;
     }
 
     h1 {
         color: white;
-        font-size: 2.8em;
+        font-size: 1.8em;
     }
 
-    .valid-button {
-        background-color: blue;
-        height: 50%;
-        width: 50%;
+    button.valid-button {
+        background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+        width: 25%;
     }
 
     button.active {
-        background-color: red;
+        background-color: rgb(74, 32, 224);
     }
 
     .selectedError {

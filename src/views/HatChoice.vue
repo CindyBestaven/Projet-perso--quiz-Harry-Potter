@@ -1,22 +1,51 @@
 <script>
 import  { getHouse } from '../data/scoreTotal.js';
-
+import { result } from '../data/dataResult.js';
 
 export default {
+ 
   data() {
     return {
-      getHouse
+      getHouse,
+      maisons: "Poufsouffle",
+      result,
+      index: 0
     }
-  } 
+  },
+  methods: {
+    resultIndex() {
+      if (getHouse() == "Gryffondor") {
+        this.index = 1;
+        return this.index
+      }
+      else if (getHouse() == "Poufsouffle") {
+        this.index = 2;
+        return this.index
+      }
+      else if (getHouse() == "Serpentard") {
+        this.indexHouse = 3;
+        return this.index
+      }
+      else if (getHouse() == "Serdaigle") {
+        this.index = 4;
+        return this.index
+      }
+    }
+  },
+  computed: {
+    currentQuestion() {
+      return this.result[this.index];
+    }
+  }
 }
 
 </script>
 
 <template>
-  <div :class="getHouse()">
+  <div class='container_result'>
     <div class="msgContainer">
-      <p>Tu es chez {{ getHouse() }} !</p>
-    </div>  
+      <p>Tu es chez {{ currentQuestion.maison }} !</p> 
+     </div>  
   </div>
 </template>
 
@@ -30,27 +59,25 @@ export default {
   }
 
   .Gryffondor {
-     width: 100vw;
-     height: 100vh;
-     background-color: red;
+      width: 300px;
+      height: 300px;
+      color: #ad1643
     }
 
   .Serdaigle {
-     width: 100vw;
-     height: 100vh;
-     background-color: blue;
+     width: 300px;
+     height: 300px;
   }  
 
   .Serpentard {
-     width: 100vw;
-     height: 100vh;
-     background-color: green;
+     width: 500px;
+     height: 500px;
   } 
   
   .Poufsouffle {
-     width: 100vw;
-     height: 100vh;
-     background-color: yellow;
+     
+     width: 500px;
+     height: 500px;
   }  
 
     
