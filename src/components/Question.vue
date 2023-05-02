@@ -70,8 +70,8 @@ export default {
     <button :class="{ active: userAnswer == currentQuestion.answer2}" @click='selectAnswer(currentQuestion.answer2)'>{{ currentQuestion.answer2.response2 }}</button>
     <button :class="{ active: userAnswer == currentQuestion.answer3}" @click='selectAnswer(currentQuestion.answer3)'>{{ currentQuestion.answer3.response3 }}</button>
     <button :class="{ active: userAnswer == currentQuestion.answer4}" @click='selectAnswer(currentQuestion.answer4)'>{{ currentQuestion.answer4.response4 }}</button>
-    <button class='valid-button' v-if="showButton1" @click='nextQuestion'>Validé</button>
-    <button class='valid-button' v-else @click="finishQuestion" >Validé le quiz</button>
+    <button class='valid-button' v-if="showButton1" @click='nextQuestion'>Valider</button>
+    <button class='valid-button' v-else @click="finishQuestion" >Valider le quiz</button>
     <p class="selectedError">{{ msgError }}</p>
   </div>
 </template>
