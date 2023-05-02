@@ -100,6 +100,7 @@ export default {
 
     button:hover {
       box-shadow: 0px 0px 13px white;
+      cursor: pointer;
     }
 
     h1 {

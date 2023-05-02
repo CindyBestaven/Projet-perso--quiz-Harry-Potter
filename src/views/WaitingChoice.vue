@@ -139,6 +139,11 @@
      margin-left: 20px;
   }
 
+  button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 30px white;
+  }
+
   .loader {
     --s: 15px; 
     width: calc(25*var(--s));

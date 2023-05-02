@@ -145,6 +145,7 @@ export default {
 
    .button_home:hover {
      box-shadow: 0px 0px 30px white;
+     cursor: pointer;
    }
 
    .title_quiz {
